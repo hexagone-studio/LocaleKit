@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.2.47</title>
+        <description><![CDATA[
+            <h2>What's New in 0.2.47</h2>
+            <ul>
+                    <li>chore: ensure proper volume cleanup during DMG creation</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 04 Feb 2026 19:24:01 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.2.47</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.2.47/LocaleKit.zip"
+            sparkle:edSignature="14309144"
+            length="14309144"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.2.45</title>
         <description><![CDATA[
             <h2>What's New in 0.2.45</h2>
