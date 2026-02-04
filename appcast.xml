@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.2.42</title>
+        <description><![CDATA[
+            <h2>What's New in 0.2.42</h2>
+            <ul>
+                    <li>ci: add create-dmg, sign, and notarize steps for macOS release</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 04 Feb 2026 10:51:14 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.2.42</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.2.42/LocaleKit.zip"
+            sparkle:edSignature="14279414"
+            length="14279414"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.2.41</title>
         <description><![CDATA[
             <h2>What's New in 0.2.41</h2>
