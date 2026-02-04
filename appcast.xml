@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.2.45</title>
+        <description><![CDATA[
+            <h2>What's New in 0.2.45</h2>
+            <ul>
+                    <li>Refactors signing order to ensure proper code signature</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 04 Feb 2026 12:11:24 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.2.45</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.2.45/LocaleKit.zip"
+            sparkle:edSignature="14278449"
+            length="14278449"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.2.43</title>
         <description><![CDATA[
             <h2>What's New in 0.2.43</h2>
