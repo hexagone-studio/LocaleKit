@@ -5,5 +5,24 @@
           <link>https://github.com/hexagone-studio/LocaleKit</link>                                                                                        
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
+    <item>
+        <title>Version 0.2.41</title>
+        <description><![CDATA[
+            <h2>What's New in 0.2.41</h2>
+            <ul>
+                    <li>chore: unlock keychain during re-signing process (#XX)</li>
+                    <li>feat: Update localization and add DeepL glossary support</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 04 Feb 2026 10:23:42 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.2.41</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.2.41/LocaleKit.zip"
+            sparkle:edSignature="14279427"
+            length="14279427"
+            type="application/octet-stream"/>
+    </item>
       </channel>                                                                                                                                           
   </rss>   
