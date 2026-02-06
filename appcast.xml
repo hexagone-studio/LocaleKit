@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.3.1</title>
+        <description><![CDATA[
+            <h2>What's New in 0.3.1</h2>
+            <ul>
+                    <li>chore: disable CLI build and signing steps in release workflow</li>
+            </ul>
+        ]]></description>
+        <pubDate>Fri, 06 Feb 2026 11:02:50 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.3.1/LocaleKit-0.3.1.zip"
+            sparkle:edSignature="14399823"
+            length="14399823"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.2.47</title>
         <description><![CDATA[
             <h2>What's New in 0.2.47</h2>
