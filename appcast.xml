@@ -6,6 +6,28 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.3.2</title>
+        <description><![CDATA[
+            <h2>What's New in 0.3.2</h2>
+            <ul>
+                    <li>[XX] feat: add support for editing and managing plural forms</li>
+                    <li>chore: disable user script sandboxing for build stability</li>
+                    <li>chore: add script to strip Sparkle framework for App Store</li>
+                    <li>feat: Add window size management for consistent UI</li>
+                    <li>refactor: streamline localization filename handling</li>
+            </ul>
+        ]]></description>
+        <pubDate>Mon, 09 Feb 2026 11:35:23 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.3.2/LocaleKit-0.3.2.zip"
+            sparkle:edSignature="14594519"
+            length="14594519"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.3.1</title>
         <description><![CDATA[
             <h2>What's New in 0.3.1</h2>
