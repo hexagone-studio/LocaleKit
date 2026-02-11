@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.4.1</title>
+        <description><![CDATA[
+            <h2>What's New in 0.4.1</h2>
+            <ul>
+                    <li>chore: update app version and remove gatekeeper assessment</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 11 Feb 2026 06:38:19 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.4.1/LocaleKit.zip"
+            sparkle:edSignature="16315380"
+            length="16315380"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.3.2</title>
         <description><![CDATA[
             <h2>What's New in 0.3.2</h2>
