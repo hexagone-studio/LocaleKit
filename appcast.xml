@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.4.5</title>
+        <description><![CDATA[
+            <h2>What's New in 0.4.5</h2>
+            <ul>
+                    <li>Enhance Mac app build with dependency verification</li>
+            </ul>
+        ]]></description>
+        <pubDate>Fri, 13 Feb 2026 15:02:54 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.4.5</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.4.5/LocaleKit.zip"
+            sparkle:edSignature="16315423"
+            length="16315423"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.4.4</title>
         <description><![CDATA[
             <h2>What's New in 0.4.4</h2>
