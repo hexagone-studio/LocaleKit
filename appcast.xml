@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>                                                                                                     
           <language>en</language>                                                                                                                          
     <item>
+        <title>Version 0.4.30</title>
+        <description><![CDATA[
+            <h2>What's New in 0.4.30</h2>
+            <ul>
+                    <li>chore: improve DMG creation process and runtime Sparkle support</li>
+            </ul>
+        ]]></description>
+        <pubDate>Mon, 02 Mar 2026 08:59:54 +0100</pubDate>
+        <sparkle:version>1</sparkle:version>
+        <sparkle:shortVersionString>0.4.30</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.4.30/LocaleKit.zip"
+            sparkle:edSignature="16324094"
+            length="16324094"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.4.21</title>
         <description><![CDATA[
             <h2>What's New in 0.4.21</h2>
