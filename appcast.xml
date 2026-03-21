@@ -6,6 +6,28 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.9.10</title>
+        <description><![CDATA[
+            <h2>What's New in 0.9.10</h2>
+            <ul>
+                    <li>[XX] feat(engine): add engine readiness check and marketing version bump (#XX)</li>
+                    <li>[LK-XX] feat: add auto-generated localization strings for various placeholders and update idle unload hint</li>
+                    <li>[LK-XX] feat: wire idle timer into MLX translate/prepare lifecycle</li>
+                    <li>[LK-XX] fix: annotate idle timer task with @MainActor for thread safety</li>
+                    <li>[LK-XX] feat: add idle timer infrastructure to MLXTranslationEngine</li>
+            </ul>
+        ]]></description>
+        <pubDate>Sat, 21 Mar 2026 18:17:29 +0100</pubDate>
+        <sparkle:version>0.9.10</sparkle:version>
+        <sparkle:shortVersionString>0.9.10</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.9.10/LocaleKit.zip"
+            sparkle:edSignature="7b3k+P2gCqCGPFQm5g7ez0UZVax/te1XW4joIp/K6LBsvvYpklzD117YedUWLYRdQKvKrTg6Zxa9FbZBx4HjCw=="
+            length="32974763"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.9.9</title>
         <description><![CDATA[
             <h2>What's New in 0.9.9</h2>
