@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.9.7</title>
+        <description><![CDATA[
+            <h2>What's New in 0.9.7</h2>
+            <ul>
+                    <li>[XX] chore(ci): add macOS destination to xcodebuild and bump marketing version to 0.9.7</li>
+            </ul>
+        ]]></description>
+        <pubDate>Sat, 21 Mar 2026 10:20:41 +0100</pubDate>
+        <sparkle:version>0.9.7</sparkle:version>
+        <sparkle:shortVersionString>0.9.7</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.9.7/LocaleKit.zip"
+            sparkle:edSignature="c17y8yDCNffxFpaju40tONgGK1xXFtoVy/xir5tPJbT3ooJjtdafEQ3+q4mvVtZq2PD+oV6JoG2lkCZ5MarrCw=="
+            length="32920693"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.7.2</title>
         <description><![CDATA[
             <h2>What's New in 0.7.2</h2>
