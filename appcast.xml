@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.9.8</title>
+        <description><![CDATA[
+            <h2>What's New in 0.9.8</h2>
+            <ul>
+                    <li>[XX] chore: bump marketing version to 0.9.8 and conditional sheet presenter attachment</li>
+            </ul>
+        ]]></description>
+        <pubDate>Sat, 21 Mar 2026 12:05:26 +0100</pubDate>
+        <sparkle:version>0.9.8</sparkle:version>
+        <sparkle:shortVersionString>0.9.8</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.9.8/LocaleKit.zip"
+            sparkle:edSignature="7kkX5SR34bH41JJ9CHcqdG8gU59lDFiyX6gf3emUxXMipLuFkpsahpyjYIDTxNnsxzWfJBCYjrOqEGjacy3dAg=="
+            length="32920519"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.9.7</title>
         <description><![CDATA[
             <h2>What's New in 0.9.7</h2>
