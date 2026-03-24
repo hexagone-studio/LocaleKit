@@ -6,6 +6,25 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.9.12</title>
+        <description><![CDATA[
+            <h2>What's New in 0.9.12</h2>
+            <ul>
+                    <li>[XX] chore: bump marketing version to 0.9.12</li>
+                    <li>[XX] HexaDropdown</li>
+            </ul>
+        ]]></description>
+        <pubDate>Tue, 24 Mar 2026 17:44:28 +0100</pubDate>
+        <sparkle:version>0.9.12</sparkle:version>
+        <sparkle:shortVersionString>0.9.12</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.9.12/LocaleKit.zip"
+            sparkle:edSignature="6KRdoCmm7SQMtpGKmDnXfa7v2wOo+JPjIwZ5FrCnfihbxb4F0ZMOiq71KpAGNT3eHqmU7bLGSzGx+Yj4VW0kBQ=="
+            length="33483244"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.9.10</title>
         <description><![CDATA[
             <h2>What's New in 0.9.10</h2>
