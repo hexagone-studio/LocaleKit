@@ -6,6 +6,38 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.9.13</title>
+        <description><![CDATA[
+            <h2>What's New in 0.9.13</h2>
+            <ul>
+                    <li>[XX]: UT coverage increased</li>
+                    <li>[LK-XX] feat: open file selector on empty state click instead of navigating to settings</li>
+                    <li>[LK-XX] feat: wire drag-and-drop handler to sidebar empty state</li>
+                    <li>[LK-XX] feat: match file list padding and redesign empty state as drop zone</li>
+                    <li>[LK-XX] feat: redesign sidebar empty files state with compact layout and add app CTA</li>
+                    <li>[LK-XX] refactor: remove stat labels, embed percentage inside wider progress bar</li>
+                    <li>[LK-XX] refactor: extract workspaceStats to local let to avoid quadruple computation</li>
+                    <li>[LK-XX] feat: integrate WorkspaceStatsView into sidebar</li>
+                    <li>[LK-XX] feat: create WorkspaceStatsView component</li>
+                    <li>[LK-XX] chore: add localization keys for sidebar workspace stats</li>
+                    <li>[LK-XX] feat: add WorkspaceStats computed property to SidebarView ViewModel</li>
+                    <li>[LK-XX] docs: add implementation plan for sidebar workspace stats</li>
+                    <li>[LK-XX] docs: address spec review feedback for sidebar stats</li>
+                    <li>[LK-XX] docs: add sidebar workspace statistics design spec</li>
+                    <li>[XX] refactor: improve code quality and enforce linting rules</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 25 Mar 2026 17:56:38 +0100</pubDate>
+        <sparkle:version>0.9.13</sparkle:version>
+        <sparkle:shortVersionString>0.9.13</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.9.13/LocaleKit.zip"
+            sparkle:edSignature="xUREOflhNEoidOjJ9wVdklhC/9ONwSM0Bw0fARltMCJDKmNd7QK8c9ce38BHpwrwDaakOuzmGsXmDZo5o475Dg=="
+            length="33503522"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.9.12</title>
         <description><![CDATA[
             <h2>What's New in 0.9.12</h2>
