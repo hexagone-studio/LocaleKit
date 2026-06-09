@@ -6,6 +6,24 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.10.5</title>
+        <description><![CDATA[
+            <h2>What's New in 0.10.5</h2>
+            <ul>
+                    <li>Release 0.10.5: develop → master (install-button env fix) (#206)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Tue, 09 Jun 2026 19:58:14 +0200</pubDate>
+        <sparkle:version>0.10.5</sparkle:version>
+        <sparkle:shortVersionString>0.10.5</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.10.5/LocaleKit.zip"
+            sparkle:edSignature="QHQD8SeOp6SuYxcI7Jq1nAZumnKpTXpr8N6TbPRsMpvtxfhaooRnZj9CMGnJ2P9UgVRYUSMRaM73cUjVtahlCA=="
+            length="71536411"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.10.4</title>
         <description><![CDATA[
             <h2>What's New in 0.10.4</h2>
