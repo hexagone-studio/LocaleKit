@@ -4,11 +4,11 @@
 class LocalekitCli < Formula
   desc "CLI tool for managing app localization across Xcode, Android, Flutter, and React Native"
   homepage "https://github.com/hexagone-studio/LocaleKit"
-  version "0.10.6"
+  version "0.10.7"
   license "MIT"
 
   url "https://github.com/hexagone-studio/LocaleKit/releases/download/#{version}/localekit-cli-#{version}-darwin-universal.tar.gz"
-  sha256 "8ec7dc74027266e042eb1897f5eeb1da10db54228a0f70c9971e9386186e9ce3"
+  sha256 "2cbf998cef848af96c092a32cfff23ec69c627ee913f3152f02efec12d508349"
 
   depends_on :macos
 
