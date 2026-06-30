@@ -6,6 +6,32 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.17.1</title>
+        <description><![CDATA[
+            <h2>What's New in 0.17.1</h2>
+            <ul>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.17.1 (#347)</li>
+                    <li>[LK-XX] fix(play): open a fresh edit at push time instead of reusing pull's (#346)</li>
+                    <li>[LK-XX] fix(dropdown): dismiss scrim no longer freezes container after close (#345)</li>
+                    <li>[LK-XX] fix(feedback): give category chips a uniform height (#344)</li>
+                    <li>[LK-XX] fix(onboarding): tone-style tier picker, full-width engine row, badges + last l10n garbage (#343)</li>
+                    <li>[LK-XX] fix(l10n): correct broken machine translations across both catalogs (#341)</li>
+                    <li>[LK-XX] fix(xcode-export): stop escaping forward slashes in .xcstrings (#340)</li>
+                    <li>[LK-XX] feat(settings): hide the merge-strategy section (default keepWorkspace) (#339)</li>
+                    <li>[LK-XX] fix(sync): default merge strategy to keepWorkspace so in-app edits stick (#338)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Tue, 30 Jun 2026 17:25:44 +0200</pubDate>
+        <sparkle:version>17001</sparkle:version>
+        <sparkle:shortVersionString>0.17.1</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.17.1/LocaleKit.zip"
+            sparkle:edSignature="9aVtJM3hsk7g2M9i4re8TmqH5vWPkMNApURGPtqEB1HTNJGV7VHWAJiusDecwDu490XvoYYKZJuSs6iZjIATDg=="
+            length="86771137"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.17.0</title>
         <description><![CDATA[
             <h2>What's New in 0.17.0</h2>
