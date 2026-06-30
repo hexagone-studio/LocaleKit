@@ -6,6 +6,545 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.17.0</title>
+        <description><![CDATA[
+            <h2>What's New in 0.17.0</h2>
+            <ul>
+                    <li>[LK-XX] chore: keep .localekitrc.yml engine: mlx (drop local deepl WIP from release)</li>
+                    <li>[LK-XX] fix(release): restore develop tree after reconciliation merge</li>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.17.0 (#336)</li>
+                    <li>[LK-XX] test(asc): fix stale Slovenian locale expectation (#335)</li>
+                    <li>l10n: Update localizations with new keys and plural refinements</li>
+                    <li>[LK-XX] fix(play): create new store-listing locales via PUT, draft-by-default, and accurate 404 diagnostics (#334)</li>
+                    <li>[LK-XX] l10n: fill all missing locale translations (8 locales, catalog 100% complete) (#333)</li>
+                    <li>[LK-XX] perf(mlx): download model shards in parallel to raise throughput (#330)</li>
+                    <li>[LK-XX] fix(mlx): correct TranslateGemma 27B RAM requirement (16 -&gt; 54 GB) (#331)</li>
+                    <li>[LK-XX] fix(l10n): add missing mlx.model.scope.* keys (rendered raw key in UI) (#332)</li>
+                    <li>[LK-XX] feat(mlx): show downloaded/total size in the download progress line (#329)</li>
+                    <li>[LK-XX] feat(mlx): download progress bar + speed, use HF token, fix cancelled-shows-as-downloaded (#328)</li>
+                    <li>[LK-XX] feat(mlx): model-library clarity + durable downloads; dashboard &amp; chip UI tweaks (#327)</li>
+                    <li>[LK-XX] fix(translation): route per-entry auto-translate through the shared queue (#326)</li>
+                    <li>[LK-XX] fix(mlx): stop the stuck "loading" phase that floods the GPU command queue (#325)</li>
+                    <li>[LK-XX] revert: MLX leak fix (#322) + file-watcher guard (#323) (#324)</li>
+                    <li>[LK-XX] fix(workspace): stop the file-watcher re-import loop that fills RAM (#323)</li>
+                    <li>[LK-XX] fix(mlx): release model RAM after download + bound the reuse cache (#322)</li>
+                    <li>[LK-XX] feat(workspace): rounded-square icon in dashboard, dropdown, editor toolbar (#321)</li>
+                    <li>[LK-XX] fix(mlx): distribute slot items across the full height (#320)</li>
+                    <li>[LK-XX] fix(mlx): left slot fills the full engine-section height (#319)</li>
+                    <li>[LK-XX] feat(mlx): total RAM top-leading, taller engine section, engine tab icon (#318)</li>
+                    <li>[LK-XX] feat(mlx): disk at section top-trailing + horizontally-centred bar (#317)</li>
+                    <li>[LK-XX] feat(mlx): segment-aligned RAM legend + wider bar (#316)</li>
+                    <li>[LK-XX] feat(mlx): real aligned table with sortable column headers (#315)</li>
+                    <li>[LK-XX] feat(mlx): full single-line table rows + WMT rank (#314)</li>
+                    <li>[LK-XX] feat(mlx): inline model list + fix cancel-marks-downloaded (#313)</li>
+                    <li>fix(editor): reuse regular cell for plural forms — reliable editing, per-line translate, no nesting (#312)</li>
+                    <li>[LK-XX] feat(translation): follow/auto-scroll to the translating cell + status layout (#310)</li>
+                    <li>[LK-XX] fix(l10n): repair malformed plurals + land per-line plural strings (#311)</li>
+                    <li>[LK-XX] feat(mlx): chip-hosted identity when loaded + filled, centered RAM panel (#309)</li>
+                    <li>[LK-XX] feat(mlx): vertical "RAM stick" memory layout (#308)</li>
+                    <li>[LK-XX] feat(mlx): directional load/unload arrows + minimal model row (#307)</li>
+                    <li>[LK-XX] feat(onboarding): show first-run stepper whenever there's no workspace (#306)</li>
+                    <li>feat(editor): per-line plural translate, plural "X values", store-listing clear, as-is key default (#305)</li>
+                    <li>[LK-XX] feat(mlx): loader-only loading state + vertical 50/50 engine layout (#304)</li>
+                    <li>[LK-XX] fix(mlx): model load no longer hangs; family icon in RAM chip (#302)</li>
+                    <li>[LK-XX] feat(mlx): precise RAM accounting, flat reservation, clearer load status (#301)</li>
+                    <li>[LK-XX] test(export): cover GitHub-push path building (buildCommitFiles) (#300)</li>
+                    <li>fix(export): native .lproj/values + flat JSON layout across GUI/CLI; stop GitHub-push file deletions (#299)</li>
+                    <li>[LK-XX] fix(mlx): stop the translation run and surface an error when RAM runs out (#298)</li>
+                    <li>[LK-XX] fix(store-listing): resolve field labels from Core bundle + harden localization CI (#297)</li>
+                    <li>[LK-XX] chore(assets): replace claude engine icon with new starburst mark (#296)</li>
+                    <li>[LK-XX] feat(translation): update Claude engine icon (refined starburst) (#295)</li>
+                    <li>[LK-XX] chore(release): bump marketing version to 0.12.1 (#293)</li>
+                    <li>[LK-XX] fix(deepl): send ignore_tags as an array so placeholder values translate (#292)</li>
+                    <li>[LK-XX] chore(release): bump marketing version to 0.12.0 (#289)</li>
+                    <li>[LK-XX] fix(editor): keep insertion point while editing a value mid-string (#288)</li>
+                    <li>[LK-XX] refactor(ui): locale-aware estimated-time formatting (#287)</li>
+                    <li>[LK-XX] feat(i18n): add Max early-access translations for de/es/fr/it/ja/pt/zh/ar (#286)</li>
+                    <li>[LK-XX] fix(early-access): advertise Max lifetime membership, not PRO (#285)</li>
+                    <li>[LK-XX] test(mocks): add 100-key GTA VI Localizable.xcstrings fixture (#284)</li>
+                    <li>[LK-XX] feat(translation): use official Anthropic starburst for Claude icon (#282)</li>
+                    <li>[LK-XX] refactor(ui): migrate remaining modals to ModalChrome (#281)</li>
+                    <li>[LK-XX] fix(tests): repair LocaleKitTests compilation after Workspace.preferredEngine removal (#283)</li>
+                    <li>[LK-XX] feat(ui): roll numeric values (counts, percentages) instead of snapping (#280)</li>
+                    <li>[LK-XX] fix(settings): engine chips open App Settings on the Translation tab (#279)</li>
+                    <li>[LK-XX] fix(translation): protect emoji so models don't drop them (#278)</li>
+                    <li>[LK-XX] feat(translation): keep the Mac awake (no screen saver) while translating (#277)</li>
+                    <li>[LK-XX] feat(wizard): add a project from GitHub (account-based source) (#276)</li>
+                    <li>[LK-XX] refactor(engine): single app-wide translation engine, remove per-workspace engine (#275)</li>
+                    <li>[LK-XX] feat(translation): soft "lower quality" hint for low-resource languages (#274)</li>
+                    <li>[LK-XX] feat(translation): warn when the engine can't translate a target language (#273)</li>
+                    <li>[LK-XX] feat(l10n): expand workspace languages to full App Store + Play catalogues (#272)</li>
+                    <li>[LK-XX] fix(translation): restore placeholders when the model script-localizes the sentinel (#271)</li>
+                    <li>[LK-XX] fix(ui): pin dashboard header opaque + min-width translating key (#270)</li>
+                    <li>[LK-XX] fix(translation): protect placeholders for prompt-only cloud engines (#269)</li>
+                    <li>[LK-XX] fix(l10n): make String(localized:) follow the in-app language (#268)</li>
+                    <li>[LK-XX] fix(l10n): add 37 missing en strings for the store-connection modal (#267)</li>
+                    <li>[LK-XX] fix(l10n): align 8 code key references with the dot.case catalog (#266)</li>
+                    <li>[LK-XX] feat(auth): enable Password AutoFill for email/password sign-in (#265)</li>
+                    <li>[LK-XX] fix(export): don't show the export-success modal while translating (#264)</li>
+                    <li>[LK-XX] fix(translation): protect URLs, domains and emails from translation (#263)</li>
+                    <li>[LK-XX] fix(translation): retry instruction-shaped sources so MLX translates "Translate" (#262)</li>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.11.0 (#260)</li>
+                    <li>[LK-XX] perf(editor): O(1) cached queue position + deterministic translation order (#259)</li>
+                    <li>[LK-XX] fix(import): default key case to "as-is" (verbatim) for all platforms (#258)</li>
+                    <li>[LK-XX] fix(import): require strong key overlap before auto-linking a scanned file (#257)</li>
+                    <li>[LK-XX] fix(l10n): XcodeExporter normalizes plural forms to reference the number (#256)</li>
+                    <li>[LK-XX] fix(translation): word-sentinel placeholders so MLX translates strings with %@ (#255)</li>
+                    <li>[LK-XX] fix(l10n): fix plural one-forms, revert corrupted Core catalog (#254)</li>
+                    <li>[LK-XX] fix(l10n): make XcodeExporter write byte-identical to Xcode's catalog (#253)</li>
+                    <li>[LK-XX] feat(editor): live "in queue (N)" position on queued cells (#252)</li>
+                    <li>[LK-XX] fix(translation): accurate time estimate for DeepL context items (#251)</li>
+                    <li>[LK-XX] fix(ui): clamp translation shimmer gradient stops to [0,1] (#250)</li>
+                    <li>[LK-XX] fix(figma): regenerate bundled ui.html via sync script (#249)</li>
+                    <li>[LK-XX] feat(brand): replace app icon and logo (#248)</li>
+                    <li>[LK-XX] feat(mlx): show "Loading model…" on translate button during RAM load (#247)</li>
+                    <li>[LK-XX] docs(ci): document poisoned-DerivedData failure + prevention (#246)</li>
+                    <li>[LK-XX] feat(feedback): in-app early-access feedback capture (#245)</li>
+                    <li>[LK-XX] chore(deps): HexaKit 0.7.1 — TimelineView glass backdrop, sheen re-enabled (#244)</li>
+                    <li>[LK-XX] fix(ui): disable glass backdrop hue-drift — it made every sheet replay its slide-in (#243)</li>
+                    <li>[LK-XX] fix(ui): remove remaining repeatForever loops that hijack sheet presentation (#242)</li>
+                    <li>[LK-XX] feat(design): trust layer, component unification, quiet resting states &amp; token sweep (#241)</li>
+                    <li>[LK-XX] fix(translation): honor file selection in translate confirmation (#240)</li>
+                    <li>[LK-XX] fix(ui): empty state, toolbar update pill, button-height audit (#239)</li>
+                    <li>[LK-XX] fix(settings): sidebar off-window layout, branded empty state, anthropicByok gating (#238)</li>
+                    <li>[LK-XX] feat(onboarding): chip-threaded walkthrough, live simulations &amp; HexaKit 0.7.0 button system (#237)</li>
+                    <li>[LK-XX] fix(import-export): harden cross-platform import/export, engine rate limits, E2E UI test (#236)</li>
+                    <li>[LK-XX] perf(table): fix first-load latency and scroll jank in the editor table (#235)</li>
+                    <li>[LK-XX] feat(onboarding): local-LLM emphasis, ecosystem page &amp; walkthrough polish (#234)</li>
+                    <li>[LK-XX] feat(translation): Claude (Anthropic) as a native translation engine (#233)</li>
+                    <li>[LK-XX] ci: branch-aware docs dispatch to localekit-docs (#232)</li>
+                    <li>[LK-XX] fix(auth): point Parse SDK at hexagone fork to kill the keychain prompt (#231)</li>
+                    <li>[LK-XX] feat(early-access): rework modal into a thank-you with PRO lifetime grant (#225)</li>
+                    <li>[LK-XX] fix(settings): language button titles shrink to fit + locale-aware system entry (#227)</li>
+                    <li>[LK-XX] fix(settings): add inner padding to CLI uninstall button (#224)</li>
+                    <li>[LK-XX] chore: hard-link Sparkle now that the App Store variant is gone (#230)</li>
+                    <li>[LK-XX] chore: remove the App Store build variant (#229)</li>
+                    <li>[LK-XX] fix(settings): stop Translation tab from pushing the sidebar off-screen (#228)</li>
+                    <li>[LK-XX] fix(workspace): wire WebApp.scan into the import pipeline (#226)</li>
+                    <li>[LK-XX] feat(translation): harden prompts against instruction-shaped source text (#223)</li>
+                    <li>[LK-XX] chore(release): bump to 0.10.11</li>
+                    <li>[LK-XX] fix(cli): unkillable bundled CLI — drop restricted entitlement + robust wrapper resolution (#221)</li>
+                    <li>[LK-XX] ci: archive test results on the runner instead of GitHub artifacts (#220)</li>
+                    <li>[LK-XX] chore(release): bump to 0.10.10</li>
+                    <li>[LK-XX] fix: actually disable app sandbox + give Sparkle a real build number (#218)</li>
+                    <li>[LK-XX] chore(release): bump to 0.10.9</li>
+                    <li>[LK-XX] fix(cli): bypass NSHomeDirectoryForUser redirect + strip quarantine xattr (#216)</li>
+                    <li>[LK-XX] chore(release): bump to 0.10.8</li>
+                    <li>[LK-XX] feat(debug): present early-access modal off real remote flag in DEBUG (#214)</li>
+                    <li>[LK-XX] fix(ci): compile MLX metallib for bundled CLI (#213)</li>
+                    <li>[LK-XX] refactor(keychain): use data-protection keychain only, drop legacy fallback (#212)</li>
+                    <li>[LK-XX] chore(release): bump to 0.10.7</li>
+                    <li>[LK-XX] fix(cli): resolve install path via passwd db, not sandbox-redirected home (#210)</li>
+                    <li>[LK-XX] fix(cli): install to ~/.local/bin (no admin needed); auto-wire shell PATH; bump 0.10.6 (#208)</li>
+                    <li>[LK-XX] feat(mlx): stream translation results per key as they complete (#207)</li>
+                    <li>[LK-XX] fix(cli): sanitise osascript subprocess environment to fix admin auth -60005; bump to 0.10.5 (#205)</li>
+                    <li>[LK-XX] feat(remote-config): PFConfig service, early-access modal, update indicator, force-update gate (#204)</li>
+                    <li>[LK-XX] fix(cli): run admin AppleScript via /usr/bin/osascript subprocess (was main-thread bug); bump to 0.10.4 (#202)</li>
+                    <li>[LK-XX] feat(cli): brew → app-managed switch flow (#200)</li>
+                    <li>[LK-XX] fix(release): preserve resolved entitlements when re-signing after CLI bundling; bump to 0.10.3 (#199)</li>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.10.2 (#197)</li>
+                    <li>[LK-XX] feat(cli): one-click Install CLI button in Settings → Advanced (#196)</li>
+                    <li>[LK-XX] ci(release): bundle the CLI into LocaleKit.app/Contents/Resources/CLI (#195)</li>
+                    <li>[LK-XX] chore(security): drop macOS sandbox; clean up sandbox-only entitlements (#194)</li>
+                    <li>[LK-XX] fix(openrouter): self-throttle :free model traffic to OpenRouter's 20 req/min cap (#192)</li>
+                    <li>[LK-XX] fix(openrouter): default empty, require model, classify 404/400 as api_model_invalid (#191)</li>
+                    <li>[LK-XX] feat: chromatic dark theme rebrand + Translation settings rework (#190)</li>
+                    <li>[LK-XX] fix(sidebar): recover tier-chip, trailing-badge &amp; email-fallback commits (#189)</li>
+                    <li>[LK-XX] fix(sidebar): cap nav row height to regular button height (#188)</li>
+                    <li>[LK-XX] refactor(settings): restructure MLX model slot columns (40/20 + trailing chip) (#185)</li>
+                    <li>[LK-XX] fix(i18n): localize HexaDropdown default placeholder (#186)</li>
+                    <li>[LK-XX] feat(settings): place MLX first in the engine tab row (#187)</li>
+                    <li>[LK-XX] test(translation): pin engine routing wire format (#184)</li>
+                    <li>[LK-XX] feat(figma): LanguageMapperService + DeepL error classification + strict engine validation (#183)</li>
+                    <li>[LK-XX] feat(figma): structured bridge errors + engine state &amp; RAM in /models (#182)</li>
+                    <li>[LK-XX] revert(mlx): drop 40/20/40 slot horizontal distribution (#181)</li>
+                    <li>[LK-XX] feat(mlx): center Load/Unload toggle + 40/20/40 slot layout (#180)</li>
+                    <li>[LK-XX] feat(mlx): two-half slot — RAM panel left, chip right, fly-in load (#178)</li>
+                    <li>[LK-XX] chore(mlx): recolor chip wires from blue to white (#177)</li>
+                    <li>[LK-XX] chore(mlx): recolor chip background + connectors to #15171f (#176)</li>
+                    <li>[LK-XX] chore(mlx): remove white center from chip Lottie main body (#175)</li>
+                    <li>[LK-XX] feat(mlx): Lottie chip, RAM stats, branded token banner (#174)</li>
+                    <li>[LK-XX] style(ui): cap button &amp; input height to the regular button height (#173)</li>
+                    <li>[LK-XX] feat(settings): MLX model slot card + model library modal (#172)</li>
+                    <li>[LK-XX] fix(i18n): apply in-app locale to detached presentations (.appLocale) (#171)</li>
+                    <li>[LK-XX] fix(auth): localize provider buttons; round text inputs (#170)</li>
+                    <li>[LK-XX] style(ui): fix remaining button radius/height outliers (#169)</li>
+                    <li>[LK-XX] style(auth,sidebar): consistent button heights (#168)</li>
+                    <li>[LK-XX] style(ui): round HexaButton corners (theme radius 20→8) (#167)</li>
+                    <li>[LK-XX] style(ui): round button corners instead of capsule/pill (#166)</li>
+                    <li>[LK-XX] feat(cli): passwordless CLI via app-shared session token (#165)</li>
+                    <li>[LK-XX] ci(release): sign CLI with keychain-access-groups so it uses the data-protection keychain (#164)</li>
+                    <li>[LK-XX] fix(keychain): use data-protection keychain to stop launch password prompts (#163)</li>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.10.1 (#161)</li>
+                    <li>[LK-XX] ci(release): pin Xcode via DEVELOPER_DIR instead of sudo xcode-select (#160)</li>
+                    <li>[LK-XX] ci(test-runner): sign UI tests via a dedicated in-job keychain (#159)</li>
+                    <li>[LK-XX] fix(mlx): cancel-during-download no longer marks model as downloaded (#107)</li>
+                    <li>[LK-XX] fix(mlx): apply trailing-punctuation normalisation to EuroLLM too (#157)</li>
+                    <li>[LK-XX] chore(i18n): strip trailing punctuation Gemma added to existing translations (#156)</li>
+                    <li>[LK-XX] fix(mlx): strip hallucinated trailing punctuation from Gemma translations (#155)</li>
+                    <li>[LK-XX] fix(settings): tab labels ignore the in-app language override (#154)</li>
+                    <li>[LK-XX] fix(cli): accept bare language codes + clear error for missing MLX metallib (#153)</li>
+                    <li>[LK-XX] chore(i18n): fill missing translations + repair garbage key-translations (#152)</li>
+                    <li>[LK-XX] feat(settings): provider-branded buttons, MLX first, gpt-5.5, hide Figma token (#151)</li>
+                    <li>[LK-XX] feat(settings): GitHub-branded connect button in Advanced (#150)</li>
+                    <li>[LK-XX] feat(figma): local HTTP bridge for the Figma plugin (#149)</li>
+                    <li>[LK-XX] chore(cli): replace silent try? in whoami with explicit do/catch + log (#148)</li>
+                    <li>[LK-XX] chore(cli): include MLX + OpenRouter in --engine help text (#147)</li>
+                    <li>[LK-XX] fix(android): surface sanitiser-induced resource-name collisions + reject leading-dot names (#146)</li>
+                    <li>[LK-XX] fix(xliff): merge per-target-language files on directory import (#145)</li>
+                    <li>[LK-XX] fix(android): sanitize XML resource names from foreign-format keys (#144)</li>
+                    <li>[LK-XX] fix(web): preserve compound ICU select+plural on export (#143)</li>
+                    <li>[LK-XX] fix(android): .properties preserves multi-scalar graphemes + supplementary plane (#142)</li>
+                    <li>test: close coverage gaps — ICU round-trip, Unicode, gettext, cross-format (#141)</li>
+                    <li>[LK-XX] fix: store-listing length counting + skip overlong sources + log MLX cleanup (#140)</li>
+                    <li>[LK-XX] test: cover OpenRouter and HuggingFace service paths (#139)</li>
+                    <li>[LK-XX] feat(cli): pre-validate store-listing lengths in translate (#138)</li>
+                    <li>fix(openrouter): retry on 429 + raise inter-batch delay to 0.3s (#137)</li>
+                    <li>[LK-XX] feat(cli): parity items — engine flags / mlx subcommand / memory guard / store-listings (#136)</li>
+                    <li>[LK-XX] ci(test-runner): cap test jobs at 15/30 min + reap stale xcodebuild (#135)</li>
+                    <li>fix(flutter): make import/export round-trip work end-to-end (#134)</li>
+                    <li>[LK-XX] feat(mlx): BYOK HuggingFace token to speed up model downloads (#133)</li>
+                    <li>[LK-XX] fix(mlx): pass &lt;end_of_turn&gt; as extra EOS for Gemma-family models (#132)</li>
+                    <li>[LK-XX] feat(engine): add OpenRouter as a translation engine (#131)</li>
+                    <li>[LK-XX] feat(editor): toolbar engine chip mirrors dashboard chip (#125)</li>
+                    <li>feat(settings): edit-pencil on configured OpenAI / DeepL engine cards (#126)</li>
+                    <li>[LK-XX] feat(deepl): step-by-step tutorial modal for the API key link (#128)</li>
+                    <li>[LK-XX] fix(translation): drain late requests before firing completion (#129)</li>
+                    <li>feat(workspace): model icon as Parse.File pointer end-to-end (#124)</li>
+                    <li>[LK-XX] fix(toolbar): keep missing-base + needing-translation counts on one line (#127)</li>
+                    <li>[LK-XX] fix(engine): chip clicks open Workspace Settings → Engine tab (#123)</li>
+                    <li>refactor(workspace): rename iconFileURL to icon to match Parse field name (#122)</li>
+                    <li>[LK-XX] refactor(placeholders): single source of truth for placeholder regex patterns (#120)</li>
+                    <li>[LK-XX] fix(deepl): protect placeholders so DeepL doesn't translate variable names (#119)</li>
+                    <li>[LK-XX] fix(scripts): orphan finder now reads extractionState from the catalog (#118)</li>
+                    <li>[LK-XX] fix(scripts): orphan finder false-positive on prefix substrings + bulk-deletion follow-up (#117)</li>
+                    <li>[LK-XX] chore(l10n): bulk-delete orphan xcstrings keys + tooling to keep doing it (#116)</li>
+                    <li>chore(scripts): orphan-key finder for xcstrings catalogs (#115)</li>
+                    <li>[LK-XX] style(workspace-settings): add breathing room above the collision warning banner (#114)</li>
+                    <li>[LK-XX] feat(workspace-settings): collision modal renders each pair as a git-diff (#113)</li>
+                    <li>[LK-XX] feat(workspace-settings): collision warning opens a details modal with prose lines (#112)</li>
+                    <li>[LK-XX] fix(playstore): surface Google's actual 400 error message in diagnostic (#111)</li>
+                    <li>[LK-XX] feat(playstore): reorder setup flow + service-level field-length gate on push (#110)</li>
+                    <li>[LK-XX] feat(asc): inline create-draft prompt + Delete-draft button for App Store listings (#109)</li>
+                    <li>[LK-XX] feat(playstore): replace play.fill placeholder with official PlayStore logo (#108)</li>
+                    <li>[LK-XX] feat(keyformat): preserve placeholder tokens via free helpers (no static regex on enum) (#106)</li>
+                    <li>[LK-XX] hotfix: revert PR #102 — placeholder-spacing format() rewrite caused launch crash (#105)</li>
+                    <li>[LK-XX] hotfix(workspace-settings): dedupe collision warning across linked files (#104)</li>
+                    <li>[LK-XX] hotfix(workspace-settings): launch crash in collision warning view (#103)</li>
+                    <li>[LK-XX] feat(keyformat): preserve placeholder tokens with space-padding instead of joining via case separator (#102)</li>
+                    <li>[LK-XX] fix(export): merge entries that collide on keyFormat instead of silently overwriting (#100)</li>
+                    <li>[LK-XX] feat(workspace): add 'as-is' KeyFormat + collision warning under selector (#101)</li>
+                    <li>[LK-XX] fix(l10n): populate en values for 215 catalog keys + always-on validation gate (#99)</li>
+                    <li>[LK-XX] fix(store-listings): pull-button spinner, language tab loader, retranslate-after-edit (#97)</li>
+                    <li>[LK-XX] fix(store-listings): keep selection visible during translation, red border on errored language (#90)</li>
+                    <li>[LK-XX] fix(asc-push): drop uneditable attributes (e.g. whatsNew on first version) and retry (#96)</li>
+                    <li>[LK-XX] fix(asc-push): recover from 409 duplicate-locale by refetching ids and patching (#95)</li>
+                    <li>[LK-XX] fix(asc-push): create missing localizations on push so non-base languages ship (#94)</li>
+                    <li>[LK-XX] fix(translation): group work items by language, publish progress per-language not per-cell (#93)</li>
+                    <li>[LK-XX] fix(store-listings): add small horizontal padding back to header (#92)</li>
+                    <li>[LK-XX] feat(store-listings): flush header, branded Pull/Push, accent-tinted locked fields (#91)</li>
+                    <li>[LK-XX] fix(store-connect): rewrite Cancel + Save as custom capsules so heights match Test Connection (#89)</li>
+                    <li>[LK-XX] feat(store-listings): toast on push success/error, hide help bubble, restore vertical header padding (#88)</li>
+                    <li>[LK-XX] feat(store-listings): rework + four polish fixes (header, footer, translate glitch, URL validation) (#86)</li>
+                    <li>[LK-XX] feat(stores): sidebar rows for linked stores + Key ID auto-fill from .p8 filename (#84)</li>
+                    <li>[LK-XX] fix(store-connect): pad Cancel + Save labels to match the Test Connection button (#83)</li>
+                    <li>[LK-XX] fix(file-watcher): start/stop watcher on add/remove + log silent failure paths (#81)</li>
+                    <li>fix(localization): restore en values for 13 empty dashboard.* keys (#82)</li>
+                    <li>[LK-XX] test(diagnostic): pin the import-new-keys contract for the keepWorkspace bug (#80)</li>
+                    <li>[LK-XX] fix(localization): rename three dashboard plural keys back to space-form (#79)</li>
+                    <li>[LK-XX] fix(dashboard): cap KPI card title to one line (#78)</li>
+                    <li>[LK-XX] fix(roundtrip): clear needsTranslation only for cells the import actually wrote (#77)</li>
+                    <li>[LK-XX] fix(store-connect): downsize Cancel + Save to match Test Connection (#75)</li>
+                    <li>[LK-XX] fix(store-connect): drop double-padding on Cancel/Save, move Key ID into step 2, rewrite step text (#74)</li>
+                    <li>[LK-XX] feat(dashboard): translate icon + KPI rename + bigger Export + workspace icon via PFFile (#73)</li>
+                    <li>[LK-XX] fix(store-connect): pad deep-link buttons, drop wand auto-detect, capsule Test Connection, destructive Cancel (#72)</li>
+                    <li>[LK-XX] feat(store-connect): branded title + embedded inputs + auto-detect + branded Test Connection (#71)</li>
+                    <li>[LK-XX] feat(dashboard): App Store Connect brand asset + engine chip joins branded family (#70)</li>
+                    <li>[LK-XX] feat(dashboard): branded integration chips, Files-section translate button, multi-model MLX live tests (#69)</li>
+                    <li>[LK-XX] test(mlx): add LocaleKitCore test target with engine + catalog + opt-in live tests (#68)</li>
+                    <li>[LK-XX] feat(editor): always show missing-base count above progress when a file is open (#67)</li>
+                    <li>[LK-XX] feat(editor): rework top toolbar — leading workspace+file, per-file center progress, trailing engine|export|translate (#66)</li>
+                    <li>[LK-XX] chore(copy): align remaining translation copy on "needing translation" (#65)</li>
+                    <li>[LK-XX] feat(dashboard): run GitHub OAuth before opening repo-link sheet (#64)</li>
+                    <li>[LK-XX] feat(dashboard): inline integration sheets, conditional store chips, accent hover (#63)</li>
+                    <li>[LK-XX] feat(dashboard): top-trailing integration chips, workspace icon, hover affordances (#62)</li>
+                    <li>[LK-XX] fix(counts): unify missing-base + needing-translation math across surfaces (#61)</li>
+                    <li>[LK-XX] fix(localization): recover lost en values + add 17 missing catalog entries (#59)</li>
+                    <li>[LK-XX] chore(copy): "missing translation" → "needing translation" (#60)</li>
+                    <li>[LK-XX] feat(dashboard): Files Export button + Languages edit button (#58)</li>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.10.0 (#57)</li>
+                    <li>[LK-XX] chore(localization): validator triages en stubs separately + backfill 11 latent ones (#56)</li>
+                    <li>[LK-XX] feat(export): GitHub-branded Connect button + fix two stub export keys (#55)</li>
+                    <li>[LK-XX] fix(translation): Stop button must clear queued / translating cell state (#54)</li>
+                    <li>feat(onboarding): first-run engine + workspace stepper (#37)</li>
+                    <li>[LK-XX] fix(localization): re-add the 32 missing create.workspace.* keys (#51)</li>
+                    <li>fix(table): silence 'Publishing changes from within view updates' warnings (#36)</li>
+                    <li>[LK-XX] fix(dashboard): apply hexaDropdownContainer so the languages dropdown opens (#53)</li>
+                    <li>[LK-XX] feat(dashboard): per-file scope dropdown on the Languages section (#52)</li>
+                    <li>[LK-XX] fix(tests): isolate workspace persistence so tests stop leaking into the live cache (#50)</li>
+                    <li>[LK-XX] fix(workspace): deleted workspace reappears when a save races the delete (#49)</li>
+                    <li>[LK-XX] feat(listing-editor): bigger language pills, translating animation, engine icon, per-field lock (#48)</li>
+                    <li>[LK-XX] fix(dashboard): visible progress for store-listing translate batch (#47)</li>
+                    <li>[LK-XX] fix(mlx): support TranslateGemma's structured-content chat template (#46)</li>
+                    <li>[LK-XX] feat(dashboard): engine moves to a top-trailing edit chip + actionable Jinja error (#45)</li>
+                    <li>[LK-XX] feat(dashboard): branded Pull/Edit buttons + auto-open editor + bigger modal (#44)</li>
+                    <li>[LK-XX] feat(dashboard): integrations rename + branded store buttons + engine card (#43)</li>
+                    <li>[LK-XX] refactor(store-listings): move from settings to dashboard (#42)</li>
+                    <li>feat(store-listings): translate App Store / Play listings end-to-end (#41)</li>
+                    <li>feat(dashboard): workspace dashboard scene with KPIs, language rings, and file rows (#40)</li>
+                    <li>feat(workspace): horizontal-step CreateWorkspaceScene wizard (#39)</li>
+                    <li>feat(import): add file-selection step between scan and language picker (#38)</li>
+                    <li>[LK-XX] chore(smoketest): seed expectedValidation counts for all 14 repos</li>
+                    <li>[LK-XX] feat(cli): add roundtrip command + native-layout export paths</li>
+                    <li>[LK-XX] chore(smoketest): add seed-validation.sh helper</li>
+                    <li>[LK-XX] feat(web): add Lingui/gettext .po format support</li>
+                    <li>[LK-XX] feat(smoketest): add translate dry-run pass</li>
+                    <li>[LK-XX] feat(smoketest): add export smoke pass via convert</li>
+                    <li>[LK-XX] feat(smoketest): add validate pass + pinned-counts ratchet</li>
+                    <li>[LK-XX] feat(flutter-importer): discover ARBs across monorepo packages</li>
+                    <li>[LK-XX] test(flutter-importer): localsend slang regression + retire canary</li>
+                    <li>[LK-XX] chore(smoketest): drop AppFlowy canary — non-standard layout</li>
+                    <li>[LK-XX] test(rn-importer): add mattermost-shape regression + retire canary</li>
+                    <li>[LK-XX] fix(rn-importer): accept FormatJS compiled react-intl shape</li>
+                    <li>[LK-XX] test(web-importer): add excalidraw-shape regression + retire canary</li>
+                    <li>[LK-XX] fix(analyzer): detect Web for monorepo sub-packages via locale dir</li>
+                    <li>[LK-XX] feat(flutter-importer): add JSON-per-locale support (slang, easy_localization)</li>
+                    <li>[LK-XX] fix(rn-importer): lower locale-dir threshold to 2 files</li>
+                    <li>[LK-XX] fix(rn-importer): broaden i18n directory discovery and filename patterns</li>
+                    <li>[LK-XX] fix(android-importer): discover strings.xml across Gradle submodules</li>
+                    <li>[LK-XX] fix(xcode-importer): walk nested .lproj directories</li>
+                    <li>[LK-XX] fix(analyzer): rank detected platforms by manifest depth</li>
+                    <li>[LK-XX] feat(tooling): add real-world parser smoke-test harness</li>
+                    <li>[LK-XX] ci: inject PAT for HexaKit dep resolution on self-hosted runner</li>
+                    <li>[LK-XX] ci: gate PRs on tests — unit only for develop, full suite for master</li>
+                    <li>[LK-XX] fix(factory): keep workspaceManager resolver test-safe via .onTest</li>
+                    <li>[LK-XX] fix(tests): two pre-existing failures surfaced by PR-gated CI</li>
+                    <li>[XX]: update i18n with LocaleKit</li>
+                    <li>[LK-XX] chore: update English localizations and replace key-based labels</li>
+                    <li>[LK-XX] chore: allow 'wait' bash command in Claude local settings</li>
+                    <li>[XX] feat(core): enhance placeholder handling and update testing framework</li>
+                    <li>[LK-XX] feat(core): preserve original locale codes + expand fixture test coverage</li>
+                    <li>[LK-XX] build: declare input plists for Firebase Config script phase</li>
+                    <li>[LK-XX] feat(cli): export/translate/sync commands preserve namespaced layout</li>
+                    <li>[LK-XX] feat(core): WebPlatform + ReactNativePlatform exporters honor namespace</li>
+                    <li>[LK-XX] feat(core): WorkspaceFile persists namespace for round-trip fidelity</li>
+                    <li>[LK-XX] feat(core): WorkspaceFileExporter honors LocalizableFile.namespace</li>
+                    <li>[LK-XX] test: FixtureTestRunner aggregates across per-namespace files</li>
+                    <li>[LK-XX] test: add reactnative-namespaced fixture and upgrade web-i18next to multi-namespace</li>
+                    <li>[LK-XX] feat(core): ReactNativeImporter supports namespaced locale directories</li>
+                    <li>[LK-XX] feat(core): WebImporter returns one LocalizableFile per namespace</li>
+                    <li>[LK-XX] refactor(core): extract NamespacedDirectoryWalker</li>
+                    <li>[LK-XX] feat(core): add namespace field to LocalizableFile</li>
+                    <li>[LK-XX] test: add React Native importer edge-case suite</li>
+                    <li>[LK-XX] fix: FlutterImporter parses bare CLDR plural keywords (zero/one/two)</li>
+                    <li>[LK-XX] fix: AndroidImporter handles backslash escapes, translatable, region qualifier, properties continuation</li>
+                    <li>[LK-XX] fix: xcstrings parser handles shouldTranslate and device variations</li>
+                    <li>[LK-XX] fix: raise XLIFF detection confidence to high for Xcode</li>
+                    <li>[LK-XX] fix: WebImporter reactIntl resolves src/locales + PlatformAnalyzer web detection</li>
+                    <li>[LK-XX] fix: AndroidImporter walks directories for .properties resource bundles</li>
+                    <li>[LK-XX] test: add android-string-array-basic fixture for list resources</li>
+                    <li>[LK-XX] test: add xcode-xliff-basic fixture with source+target trans-units</li>
+                    <li>[LK-XX] fix: XcodeImporter.parseStringsDict handles real Apple plist format</li>
+                    <li>[LK-XX] test: FixtureDescriptor gains optional fileType field</li>
+                    <li>[LK-XX] fix: XcodeImporter detects stringsdict and xliff directories</li>
+                    <li>[LK-XX] docs: add file-type coverage matrix plan</li>
+                    <li>[LK-XX] fix: ICU plural detection and validation regressions</li>
+                    <li>[LK-XX] test: align WorkspaceFileExporter round-trip test with current converter behavior</li>
+                    <li>[LK-XX] test: remove MLX switchModel test that hit real network</li>
+                    <li>[LK-XX] test: default isRemoteSyncEnabled=true in WorkspacePersistenceService tests</li>
+                    <li>[LK-XX] test: align remaining view-model tests with current APIs</li>
+                    <li>[LK-XX] test: align Subscription Model tests with current monthly prices</li>
+                    <li>[LK-XX] test: align SidebarView.ViewModel tests with auth singleton reality</li>
+                    <li>[LK-XX] test: remove brittle ProfileScene.ViewModel no-user tests</li>
+                    <li>[LK-XX] test: align AppSettingsScene.ViewModel tests with feature system</li>
+                    <li>[LK-XX] test: align small service/command test expectations with current behavior</li>
+                    <li>[LK-XX] test: update MLXModelOption region filter expectations</li>
+                    <li>[LK-XX] test: align TranslationEngine timing and MLX display tests with 3-engine set</li>
+                    <li>[LK-XX] fix: PlatformSpecifics preserves ICU plural/select messages in convertAll</li>
+                    <li>[LK-XX] test: ARB @@locale uses underscore separator per spec</li>
+                    <li>[LK-XX] test: align AppTarget backward-compat fixture with current KeyFormat raw values</li>
+                    <li>[LK-XX] test: update enum counts and display names for Web platform and 17th language</li>
+                    <li>[LK-XX] fix: Xcode prefers xcstrings over strings; Web scopes to locale files</li>
+                    <li>[LK-XX] fix: importers default to canonical file type for directory URLs</li>
+                    <li>[LK-XX] docs: add plan for fixing the unit test suite</li>
+                    <li>[LK-XX] test: fix test target build after subscription/export modal merge</li>
+                    <li>[LK-XX] chore: regenerate Features.generated.swift without apple_intelligence</li>
+                    <li>[LK-XX] refactor: remove Apple Intelligence engine, rename MLX display to "Local"</li>
+                    <li>[LK-XX] fix: restore develop build after subscription merge</li>
+                    <li>[LK-XX] feat: add engine.mlx.display.name localization key</li>
+                    <li>[XX] New keys</li>
+                    <li>[XX] feat(subscription): add purchase claiming feature with email verification</li>
+                    <li>[LK-XX] docs: add implementation plan for removing Apple Intelligence and renaming MLX</li>
+                    <li>[LK-XX] docs: add spec for removing Apple Intelligence and renaming MLX to Local</li>
+                    <li>[XX] feat: add localization support and improve linker flags (#XX)</li>
+                    <li>[XX] New update</li>
+                    <li>[LK-XX] feat: improve bug report with workspace/account context, add button padding</li>
+                    <li>[LK-XX] fix: add error logging for profile image download and manual app bookmark creation</li>
+                    <li>[LK-XX] chore: add localization keys for error toast messages</li>
+                    <li>[LK-XX] fix: add error logging for feature service, OAuth, and subscription fetch</li>
+                    <li>[LK-XX] fix: add error logging for bookmark creation and file watcher reimport</li>
+                    <li>[LK-XX] fix: add error handling and toast for MLX model operations</li>
+                    <li>[LK-XX] fix: add error handling and toast for profile operations</li>
+                    <li>[LK-XX] fix: add error handling and toast for app import from sidebar</li>
+                    <li>[LK-XX] fix: add error handling and toast for account deletion and sign out</li>
+                    <li>[LK-XX] fix: add error handling and toast for subscription cancellation</li>
+                    <li>[LK-XX] fix: replace silent try? with logged error handling in persistence layer</li>
+                    <li>[LK-XX] feat: add SubscriptionLog and MLXLog domains</li>
+                    <li>[LK-XX] feat: add Report a Problem button to About settings tab</li>
+                    <li>[LK-XX] feat: add ReportProblemService for email-based bug reports</li>
+                    <li>[LK-XX] feat: add logging to SessionManager</li>
+                    <li>[LK-XX] feat: add logging to AuthenticationManager</li>
+                    <li>[LK-XX] feat: add logging to WorkspaceManager</li>
+                    <li>[LK-XX] feat: add logging to TranslationManager</li>
+                    <li>[LK-XX] feat: add TranslationLog, WorkspaceLog, AuthLog, SyncLog, ExportLog domains</li>
+                    <li>[LK-XX] feat: register CrashlyticsSink at app startup</li>
+                    <li>[LK-XX] fix: resolve compilation errors in RAM bar (Color type mismatches), restore en-US values</li>
+                    <li>[LK-XX] feat: redesign RAM bar with 4 segments, chip legend, and reserved RAM selector</li>
+                    <li>[LK-XX] feat: wire MemoryMonitorService to TranslationManager for MLX memory checks</li>
+                    <li>[LK-XX] feat: add memory pause check in MLX batch loop, model load/unload callbacks</li>
+                    <li>[LK-XX] feat: create MemoryMonitorService with live RAM monitoring, threshold, and pressure detection</li>
+                    <li>[LK-XX] feat: add RAM preset algorithm and mlxReservedRAMGB UserDefaults key</li>
+                    <li>[LK-XX] docs: add MLX RAM management implementation plan</li>
+                    <li>[LK-XX] docs: use accent color for model segment in RAM bar spec</li>
+                    <li>[LK-XX] docs: add MLX RAM management system design spec</li>
+                    <li>[XX] chore(localization): update marketing version and language strings</li>
+                    <li>[LK-XX] feat: detect key-as-value (untranslated) entries in validation script, fix remaining 2 en-US offenders</li>
+                    <li>[LK-XX] fix: replace 11 untranslated en-US values (key-as-value) with real translations from dot-twin keys</li>
+                    <li>[LK-XX] chore: add en-US for all keys including format strings, update validation script to catch format-string keys</li>
+                    <li>[LK-XX] chore: add en-US values for all dot-cased keys missing translations</li>
+                    <li>[LK-XX] fix: remove logo header and branded footer from PR body</li>
+                    <li>[LK-XX] feat: add country flag emoji to PR language table</li>
+                    <li>[LK-XX] feat: enhance PR body with logo, shields.io badges, progress bars, and richer formatting</li>
+                    <li>[LK-XX] fix: remove open-in-browser toggle, add Open PR button, show errors via popover, richer PR success state</li>
+                    <li>[LK-XX] fix: route local export through WorkspaceManager for sandbox access, force-update branch for PR updates</li>
+                    <li>[LK-XX] fix: make PR file paths relative to app target root, strip leading slashes</li>
+                    <li>[LK-XX] fix: use FileLink.platformPath (relative) for GitHub PR paths instead of absolute outputPath</li>
+                    <li>[LK-XX] fix: strip leading slash from file paths for GitHub tree API</li>
+                    <li>[LK-XX] fix: branch field combo (type or select), ensure all text uses theme fonts</li>
+                    <li>[LK-XX] fix: polish PR form — repo under title, branch selector, open in browser toggle, button styling, spacing</li>
+                    <li>[LK-XX] fix: polish export modal — single-line names, button padding, GitHub PR button, reveal in Finder, open repo link</li>
+                    <li>[LK-XX] fix: resolve compilation errors in export modal (type mismatches, access level, API names)</li>
+                    <li>[LK-XX] chore: remove GitHubCommitModal and GitHubCommitService (replaced by unified export modal)</li>
+                    <li>[LK-XX] chore: add localization keys for export &amp; push modal</li>
+                    <li>[LK-XX] refactor: update RootScene to use new ExportModalView API</li>
+                    <li>[LK-XX] feat: rewrite ExportModalView as unified export &amp; push modal</li>
+                    <li>[LK-XX] refactor: rewrite ExportModalView ViewModel for unified export &amp; push</li>
+                    <li>[LK-XX] feat: add GitHelper utility for live branch detection</li>
+                    <li>fix: push unlink button to trailing position</li>
+                    <li>fix: include organization repos in GitHub repo listing</li>
+                    <li>fix: single GitHub link button at trailing, remove duplicate actions</li>
+                    <li>feat: add "Link with GitHub" capsule button gated by feature service</li>
+                    <li>fix: use develop layout for AppsSection, re-apply feature gating</li>
+                    <li>fix: resolve Localizable.xcstrings merge conflicts</li>
+                    <li>[XX] fix(workspace): disable remote sync by default</li>
+                    <li>fix: reduce modal height to 620</li>
+                    <li>fix: hide tagline on Free card, restore subscribe button for all tiers</li>
+                    <li>fix: remove logo, adjust modal size, polish ManageSubscriptionScene</li>
+                    <li>fix: correct pricing, LocaleKit logo, title position, modal height</li>
+                    <li>feat: redesign ManageSubscriptionScene with tier colors, glow, and features.json data</li>
+                    <li>fix: RootScene loading spinner only shown on initial load</li>
+                    <li>fix: prevent ManageSubscriptionScene from dismissing AppSettingsScene</li>
+                    <li>fix: add en-US values for paywall.limit.title and paywall.price.hint</li>
+                    <li>feat: limit-aware paywall title, pricing hint on all upgrade prompts</li>
+                    <li>fix: feature-specific limit text, workspace modal with usage count + xmark</li>
+                    <li>fix: workspace limit modal uses FeaturePaywallView, regenerate with limit=1</li>
+                    <li>feat: clearer key limit banner — shows active/inactive counts</li>
+                    <li>fix: subscription modal no longer auto-dismisses, align banner padding</li>
+                    <li>fix: over-limit keys — no capsule, no hover, consistent greying, single banner</li>
+                    <li>fix: over-limit keys are fully non-interactive in table</li>
+                    <li>feat: enforce key-per-workspace limits in CLI commands</li>
+                    <li>feat: handle over-limit keys — dim rows, block translation, show banner</li>
+                    <li>feat: use FeatureService for engines, add key limit, fix repo UI</li>
+                    <li>fix: UI polish — orange banners, cloud sync layout, tone badge, repo upgrade</li>
+                    <li>feat: make GetProSectionView dynamic based on user's current tier</li>
+                    <li>fix: paywall logic — show next tier for limits, add dismiss, show gated content</li>
+                    <li>fix: resolve compile errors — imports, type conflicts, MainActor isolation</li>
+                    <li>fix: move generated types to LocaleKitCore shared library target</li>
+                    <li>fix: resolve features.json path correctly in worktree setups</li>
+                    <li>fix: remove build phase causing dependency cycle, use scheme pre-action</li>
+                    <li>[LK-XX] feat: wire feature gating into app views for tier-restricted features</li>
+                    <li>[LK-XX] feat: add featureGated view modifier for declarative feature gating</li>
+                    <li>[LK-XX] feat: add TierRequirementBadge and FeaturePaywallView components</li>
+                    <li>feat: wire CLIFeatureGate into all tier-gated CLI commands</li>
+                    <li>feat: add Xcode build phase to auto-generate Swift feature types</li>
+                    <li>fix: add @MainActor to FeatureService to prevent data races</li>
+                    <li>test: add FeatureAccess and CLIFeatureGate unit tests</li>
+                    <li>docs: add Xcode build phase instructions and feature gating guidelines</li>
+                    <li>feat: add CLIFeatureGate for tier-based CLI command access control</li>
+                    <li>feat: add FeatureService with live API fetch, disk cache, and fallback</li>
+                    <li>feat: add Swift code generator and generated feature types</li>
+                    <li>[XX] feat(app): enhance language validation and UI updates</li>
+                    <li>[XX] feat: add new web platform support for localization (#XX)</li>
+                    <li>[LK-XX] feat: add WebApp platform struct with scan and export</li>
+                    <li>[LK-XX] feat: register web platform in factories and CLI parser</li>
+                    <li>[LK-XX] feat: add web platform detection in PlatformAnalyzer</li>
+                    <li>[LK-XX] feat: add web platform type with WebFileType enum</li>
+                    <li>[LK-XX] feat: sync on app foreground + periodic 5-minute poll</li>
+                    <li>[LK-XX] chore: remove unused callFunction from ParseRESTClient</li>
+                    <li>[LK-XX] refactor: move orphan file cleanup to server-side afterSave trigger</li>
+                    <li>[LK-XX] feat: delta file sync, orphan cleanup, and sync progress</li>
+                    <li>[LK-XX] refactor(ui): use design system tokens for survey views</li>
+                    <li>[LK-XX] feat: re-prompt onboarding survey after first translation</li>
+                    <li>[LK-XX] fix(ui): cloud sync section takes full width, add en-US values</li>
+                    <li>[LK-XX] feat: wire onboarding survey modal into RootScene</li>
+                    <li>[LK-XX] feat: add OnboardingSurveyScene wizard container</li>
+                    <li>[LK-XX] feat: add OnboardingSurveyScene ViewModel with tests</li>
+                    <li>[LK-XX] feat: add OnboardingSurveyStepView reusable component</li>
+                    <li>[LK-XX] chore(i18n): add onboarding survey localization keys</li>
+                    <li>[LK-XX] feat: add onboarding survey analytics events</li>
+                    <li>[LK-XX] feat: add onboardingSurvey computed property to User model</li>
+                    <li>[LK-XX] test: improve hasOtherTextField test coverage for all enum types</li>
+                    <li>[LK-XX] feat: add OnboardingSurvey data model with enums and tests</li>
+                    <li>[LK-XX] feat(ui): redesign cloud sync as dedicated section in workspace settings</li>
+                    <li>[LK-XX] docs: add onboarding survey implementation plan</li>
+                    <li>[LK-XX] docs: add onboarding survey design spec</li>
+                    <li>[LK-XX] feat: auto-translate entries when base value changes from file sync</li>
+                    <li>[LK-XX] feat(ui): add cloud sync toggle to workspace settings</li>
+                    <li>[LK-XX] feat: add isRemoteSyncEnabled toggle per workspace</li>
+                    <li>[LK-XX] feat: show cloud sync status via toast banners</li>
+                    <li>[LK-XX] chore: switch HexaKit from local path to remote GitHub package (&gt;=0.5.0)</li>
+                    <li>[LK-XX] fix: propagate workspace id changes to all in-memory references</li>
+                    <li>[LK-XX] fix: address critical bugs from code review</li>
+                    <li>[LK-XX] fix: push new workspaces to Parse during sync</li>
+                    <li>[LK-XX] refactor: make loadCached synchronous on WorkspacePersisting protocol</li>
+                    <li>[LK-XX] fix: load cached workspaces synchronously to prevent render crash</li>
+                    <li>[LK-XX] fix: resolve EXC_BAD_ACCESS crash from @Injected protocol existentials</li>
+                    <li>[LK-XX] fix: add missing subscriptionChanged analytics event case</li>
+                    <li>[LK-XX] feat: debounce workspace saves to Parse</li>
+                    <li>[LK-XX] feat: write .localekitrc.yml on save and sync</li>
+                    <li>[LK-XX] refactor: CLIAuthService delegates HTTP to ParseRESTClient</li>
+                    <li>[LK-XX] feat: wire WorkspacePersistenceService into CLI</li>
+                    <li>[LK-XX] feat: wire WorkspacePersistenceService into macOS app</li>
+                    <li>[LK-XX] feat: add WorkspacePersistenceService with cloud sync</li>
+                    <li>[LK-XX] feat: add WorkspaceMapper for Parse &lt;-&gt; Workspace conversion</li>
+                    <li>[LK-XX] feat: add LocalWorkspaceCache with dirty flag support</li>
+                    <li>[LK-XX] refactor: change Workspace.id from UUID to String</li>
+                    <li>[LK-XX] feat: add ParseRESTClient with protocol and tests</li>
+                    <li>[LK-XX] feat: add ParseRESTError type</li>
+                    <li>[LK-XX] chore(i18n): add dunning and plan change localization keys</li>
+                    <li>[LK-XX] feat(ui): add dunning banner to ProfileScene subscription tab</li>
+                    <li>[LK-XX] feat(ui): wire ManageSubscriptionScene to Paddle and Cloud Functions with dunning banner</li>
+                    <li>[LK-XX] feat: extract shared ParseEnvironment config</li>
+                    <li>[LK-XX] feat(ui): add DunningBannerView component</li>
+                    <li>[LK-XX] feat(service): use Cloud Functions for subscription management, add changePlan and dunning state</li>
+                    <li>[LK-XX] feat(config): replace Stripe with Paddle checkout URLs and price IDs</li>
+                    <li>[LK-XX] feat(model): add dunning fields, pastDue status, remove dead subscribeURL</li>
+                    <li>[LK-XX] docs: add workspace cloud persistence implementation plan</li>
+                    <li>[LK-XX] docs: add workspace cloud persistence design spec</li>
+                    <li>[XX] ci(test-runner): implement scheduled workflows for tests and enhance localization (#XX)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Tue, 30 Jun 2026 10:26:29 +0200</pubDate>
+        <sparkle:version>17000</sparkle:version>
+        <sparkle:shortVersionString>0.17.0</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.17.0/LocaleKit.zip"
+            sparkle:edSignature="IGr3Dz86wpV2YdmM4ORpyhdWVMnwzk6fzvNLSF0R+wvwKX5/aQCc0hZVdrmatLmT/7Pv09oCe/idwDNFz782Cw=="
+            length="86798395"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.12.1</title>
         <description><![CDATA[
             <h2>What's New in 0.12.1</h2>
