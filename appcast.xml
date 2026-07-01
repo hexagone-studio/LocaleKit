@@ -6,6 +6,34 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.17.2</title>
+        <description><![CDATA[
+            <h2>What's New in 0.17.2</h2>
+            <ul>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.17.2 (#359)</li>
+                    <li>[LK-XX] test(live): infinitive/vouvoiement + feat: per-language prompt conventions (Option B) (#358)</li>
+                    <li>[LK-XX] feat(translation): explicit UI-role context (Lever 2) + remove GTA demo strings (#357)</li>
+                    <li>[LK-XX] feat(translation): add UI-localization conventions to the LLM prompt (#356)</li>
+                    <li>[LK-XX] fix(l10n): standardize German to Sie (formal) and Spanish to tú (informal) (#355)</li>
+                    <li>[LK-XX] fix(l10n): use infinitive form for button/link labels (fr/es/pt/de) (#354)</li>
+                    <li>[LK-XX] fix(l10n): un-stale 52 referenced keys + translate 2 plural-cell keys; fix stale Xcode slash test (#353)</li>
+                    <li>[LK-XX] feat(round-trip): generic lossless import/export envelope across all platforms (#352)</li>
+                    <li>[LK-XX] fix(import/export): spec-correct importers/exporters across all platforms + fidelity test suite (#351)</li>
+                    <li>[LK-XX] feat(nav): make toolbar logo return to the workspace root (#350)</li>
+                    <li>[LK-XX] fix(onboarding): white Recommended badge + Validate button inline with input (#349)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 01 Jul 2026 17:32:10 +0200</pubDate>
+        <sparkle:version>17002</sparkle:version>
+        <sparkle:shortVersionString>0.17.2</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.17.2/LocaleKit.zip"
+            sparkle:edSignature="YJiToXhJEV6KsCTYJNxFTw977MFWEKoZPDp5PeHfjdAWmZbUOGKgpFjUdoLZm/7LAWafatl+kBca3SxfXA/nAw=="
+            length="87360564"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.17.1</title>
         <description><![CDATA[
             <h2>What's New in 0.17.1</h2>
