@@ -6,6 +6,45 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.18.0</title>
+        <description><![CDATA[
+            <h2>What's New in 0.18.0</h2>
+            <ul>
+                    <li>[LK-XX] fix(uitest): suppress the early-access modal during UI tests (#383)</li>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.18.0 (#381)</li>
+                    <li>[LK-XX] fix(github): clear the dead token and prompt reconnect on a 401 sync (#380)</li>
+                    <li>[LK-XX] fix(mcp): constrain convert output path to the workspace directory (#379)</li>
+                    <li>[LK-XX] fix(translation): drain the next workspace's queue when a run finishes (#378)</li>
+                    <li>[LK-XX] fix(sync): merge sync result at write time so window edits survive (#377)</li>
+                    <li>[LK-XX] test(mock): make MockParseRESTClient.calls thread-safe (#376)</li>
+                    <li>[LK-XX] fix(editor): reload table on same-size filter change (content, not just count) (#375)</li>
+                    <li>[LK-XX] fix(sync): serialize workspace-cache writes + keep dirty edits on remote delete (#374)</li>
+                    <li>[LK-XX] fix(mcp): persist translations + enforce tier in the translate tool (#373)</li>
+                    <li>[LK-XX] fix(translation): scope stop/cancel to the active workspace (#372)</li>
+                    <li>[LK-XX] fix(roundtrip): merge (not replace) format metadata on re-import (#371)</li>
+                    <li>[LK-XX] fix(figma-bridge): don't leak tier/version from unauthenticated /health (#370)</li>
+                    <li>[LK-XX] fix(sync): re-arm cancelled export after a watcher merge (#369)</li>
+                    <li>[LK-XX] fix(scan): data race on foundFilePaths during import scan (#368)</li>
+                    <li>[LK-XX] fix(persistence): don't silently wipe workspaces on a corrupt cache file (#367)</li>
+                    <li>[LK-XX] fix(import): strip and round-trip top-level _meta blocks in JSON imports (#366)</li>
+                    <li>[LK-XX] fix(networking): retry (OpenAI/Anthropic), GitHub pagination + truncation, non-destructive sync (#365)</li>
+                    <li>[LK-XX] fix(workspace): scope watcher teardown to own targets; surface export failures (#364)</li>
+                    <li>[LK-XX] fix(cli): stop wiping the session on network errors; reject unknown language codes (#363)</li>
+                    <li>[LK-XX] fix(translation): translation &amp; merge data-integrity (4 bugs) (#362)</li>
+                    <li>[LK-XX] fix(cli): native layout for .properties so roundtrip re-imports (Java suffix convention) (#361)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Thu, 02 Jul 2026 18:48:28 +0200</pubDate>
+        <sparkle:version>18000</sparkle:version>
+        <sparkle:shortVersionString>0.18.0</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.18.0/LocaleKit.zip"
+            sparkle:edSignature="loubdYv5Ls0KuKXHmOYQ9IY0HMXNA8FiTVjbkz1lXD2TEbzYyifuXuR7Vmfd/bWvrWHjwF6U0mPVNyGvTmbFBA=="
+            length="87437605"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.17.2</title>
         <description><![CDATA[
             <h2>What's New in 0.17.2</h2>
