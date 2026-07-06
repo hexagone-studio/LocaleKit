@@ -6,6 +6,29 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.20.0</title>
+        <description><![CDATA[
+            <h2>What's New in 0.20.0</h2>
+            <ul>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.20.0 (#403)</li>
+                    <li>[LK-XX] chore(l10n): purge 49 dead localization keys from removed features (#402)</li>
+                    <li>[LK-XX] chore(l10n): translate 4 missing keys, purge 13 stale duplicate keys (#401)</li>
+                    <li>[LK-XX] feat(glossary): editable terms + "keep unchanged" do-not-translate mode (#400)</li>
+                    <li>[LK-XX] fix(mlx): recover leading placeholder TranslateGemma drops after quote-wrap (#399)</li>
+                    <li>[LK-XX] feat(mlx): enforce glossary terms in the TranslateGemma path (#398)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Mon, 06 Jul 2026 19:28:39 +0200</pubDate>
+        <sparkle:version>20000</sparkle:version>
+        <sparkle:shortVersionString>0.20.0</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.20.0/LocaleKit.zip"
+            sparkle:edSignature="OjXCpNK+1hGFmrmHvUFWJl/wr6XYXLUk55pGniBmr6qk8YHhjA1pM3zlJj2XNkFpTi33YLUeDeOR4m0s1yC5Bw=="
+            length="87629670"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.19.0</title>
         <description><![CDATA[
             <h2>What's New in 0.19.0</h2>
