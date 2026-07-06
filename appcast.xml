@@ -6,6 +6,35 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.19.0</title>
+        <description><![CDATA[
+            <h2>What's New in 0.19.0</h2>
+            <ul>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.19.0 (#396)</li>
+                    <li>[LK-XX] fix(figma): raise loopback bridge request timeout to 180s (#395)</li>
+                    <li>[LK-XX] chore(figma): bump plugin — bigger empty state, Translate in right panel (#394)</li>
+                    <li>[LK-XX] fix(figma): bridge binds both loopback families (fixes "Failed to fetch") (#393)</li>
+                    <li>[LK-XX] feat(figma): canvas-first plugin layout with hierarchy toggle (#391)</li>
+                    <li>[LK-XX] fix(figma): hotspot alignment, folder tree, lock overlay, bigger UI (#390)</li>
+                    <li>[LK-XX] feat(figma): clickable preview hotspots + text/frame icons in hierarchy (#389)</li>
+                    <li>[LK-XX] chore(figma): update plugin logo to the glowing diamond (#388)</li>
+                    <li>[LK-XX] feat(figma): bypass the bridge token in dev builds (#387)</li>
+                    <li>[LK-XX] feat(figma): frame hierarchy, canvas-pick exclude, non-overlapping placement (#386)</li>
+                    <li>[LK-XX] test: assert the GitHub PR diff on the wire (tree payload) (#385)</li>
+                    <li>[LK-XX] test: cover orchestration, auth, workspace, version &amp; billing gaps (#384)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Mon, 06 Jul 2026 15:17:46 +0200</pubDate>
+        <sparkle:version>19000</sparkle:version>
+        <sparkle:shortVersionString>0.19.0</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.19.0/LocaleKit.zip"
+            sparkle:edSignature="jVzdnGEvSnVNcmekbzxOREfkOVYUBaqFbMXJCyTDym/bwiP/a+7BlJWaLDdgW1uK8Kaz/orz2MYeNGFBFTHvBw=="
+            length="87533037"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.18.0</title>
         <description><![CDATA[
             <h2>What's New in 0.18.0</h2>
