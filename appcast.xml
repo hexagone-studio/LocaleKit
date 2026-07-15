@@ -6,6 +6,26 @@
           <description>LocaleKit updates</description>
           <language>en</language>
     <item>
+        <title>Version 0.20.1</title>
+        <description><![CDATA[
+            <h2>What's New in 0.20.1</h2>
+            <ul>
+                    <li>[LK-XX] chore(release): bump MARKETING_VERSION to 0.20.1 (#407)</li>
+                    <li>[LK-XX] fix(play): scope push validation and guard partial new-locale PUT (#406)</li>
+                    <li>[LK-XX] fix(import): keep wizard-added languages not present in the project (#405)</li>
+            </ul>
+        ]]></description>
+        <pubDate>Wed, 15 Jul 2026 16:08:48 +0200</pubDate>
+        <sparkle:version>20001</sparkle:version>
+        <sparkle:shortVersionString>0.20.1</sparkle:shortVersionString>
+        <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+        <enclosure
+            url="https://github.com/hexagone-studio/LocaleKit/releases/download/0.20.1/LocaleKit.zip"
+            sparkle:edSignature="zwPIMgzSqiTvWLVp+gxqhRRpFRy3AaHTGPo5gwX12EeY5c2ETA6eeKnY8OF9KBrkq6G4mNdclBepAiYiNKtiDw=="
+            length="87641605"
+            type="application/octet-stream"/>
+    </item>
+    <item>
         <title>Version 0.20.0</title>
         <description><![CDATA[
             <h2>What's New in 0.20.0</h2>
